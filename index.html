@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>carrito</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <h1>Bienvenido a la tienda online</h1>
+    <div class="container">
+        <form class="formulario">
+            <select name="compra" id="producto">
+                <option value="1" class="tit">Productos</option>
+                <option value="2">Aceite</option>
+                <option value="3">Atún</option>
+                <option value="4">Huevos</option>
+                <option value="5">Leche</option>
+                <option value="6">Tomate</option>
+                <option value="7">Patatas</option>
+                <option value="8">Judías</option>
+            </select>
+        </form>
+    
+        <input type="button" onclick="anadir_alimento()" id="anadir" value="Añadir a la cesta">
+    
+        <div class="Micesta">
+            <p>Tu carrito tiene:</p><br/>
+         
+        </div>
+        <div class="foto">
+            <img src="carrito1.png">   
+        </div>
+        <input type="button" onclick="comprar()" id="btn" value="Comprar">
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/motor.js"></script>
+</body>
+</html>
